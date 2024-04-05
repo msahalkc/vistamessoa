@@ -29,3 +29,11 @@ body{
 .blurBg{
   backdrop-filter: blur(10px);
 }
+
+.simplebar-scrollbar::before {
+  border: 1px solid grey;
+	width: 50%;
+	max-height: 300px;
+	min-height: 200px;
+	margin: 50px auto;
+}
