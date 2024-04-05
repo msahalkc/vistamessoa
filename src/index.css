@@ -31,9 +31,50 @@ body{
 }
 
 .simplebar-scrollbar::before {
-  border: 1px solid grey;
+  border: 1px solid #81381F;
 	width: 50%;
 	max-height: 300px;
 	min-height: 200px;
 	margin: 50px auto;
+}
+
+/* Style for scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  background-color: #81381F; /* Background color of the scrollbar track */
+}
+
+/* Style for scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #81381F; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Style for scrollbar track in Firefox */
+* {
+  scrollbar-width: thin; /* Width of the scrollbar in Firefox */
+  scrollbar-color: #81381F #dac9b1; /* Color of the thumb and track in Firefox */
+}
+
+/* Apply position:relative to anchor tags */
+a.navbar-link {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Create the pseudo-element for the underline */
+a.navbar-link::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  left: 0%; /* Position the underline at the middle of the link */
+  bottom: 0; /* Place the underline at the bottom of the link */
+  width: 0; /* Initial width */
+  height: 2px; /* Height of the underline */
+  background-color: #04066C; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+/* Expand the width of the underline on hover */
+a.navbar-link:hover::after {
+  width: 100%; /* Expand the width to cover the entire width of the link */
 }
