@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <title>Vista 2024</title>
+    <style>
+      /* Your custom styles go here */
+    </style>
+  </head>
+  <body>
+    <nav class="py-5 md:px-36 px-5 text-2xl bg-transparent fixed md:w-screen z-30" id="navbar">
+      <div class="flex justify-between items-center gap-56">
+        <!-- Title -->
+        <a href="#" class="text-[#04066C] hover:text-[#0004B9] font-semibold"
+          >Vista 2024</a
+        >
+
+        <!-- Navbar links -->
+        <div class="hidden md:flex flex-1 items-center justify-between">
+          <a href="#" class="font-normal text-[#04066C] hover:text-[#0004B9]"
+            >About</a
+          >
+          <a href="#" class="font-normal text-[#04066C] hover:text-[#0004B9]"
+            >Talks</a
+          >
+          <a href="#" class="font-normal text-[#04066C] hover:text-[#0004B9]"
+            >Events</a
+          >
+          <button class="font-normal buyTicket py-2 px-5">Buy Ticket</button>
+        </div>
+
+        <!-- Responsive Button -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-[#04066C] hover:text-gray-200 focus:outline-none focus:text-gray-200"
+          >
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Responsive Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-[#04066C] text-white p-4 text-center"
+    >
+      <a href="#" class="block py-2 px-4">About</a>
+      <a href="#" class="block py-2 px-4">Talks</a>
+      <a href="#" class="block py-2 px-4">Events</a>
+    </div>
+    <div class="parallax"></div>
+    <section
+      class="flex md:px-36 px-5 text-2xl min-h-screen absolute inset-0"
+      id="Home"
+    >
+      <div class="flex flex-col justify-center w-[50%] min-h-[90vh] gap-5">
+        <h3 class="font-[Manrope] text-5xl font-semibold">
+          Exploring the Dimensions of Architecture
+        </h3>
+        <div class="w-fit">
+          <h1 class="text-8xl font-semibold text-[#04066C]">Vista 2024</h1>
+          <div class="flex justify-between text-2xl">
+            <h5 class="font-semibold">20, 21 April</h5>
+            <h5 class="">MES College of Engineering</h5>
+          </div>
+        </div>
+        <button class="font-normal buyTicket py-2 px-5 w-fit">
+          Buy Ticket
+        </button>
+      </div>
+      <div class="w-[50%]">
+        <img
+          src="./assets/building.png"
+          class="absolute bottom-0 h-screen"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="About">
+      <div class="pt-36">
+        <h2 class="font-semibold text-5xl text-[#81381F] font-[Manrope]">
+          About
+        </h2>
+        <div class="flex flex-col gap-5 pt-5">
+          <p class="font-semibold">After completing Architecture, what next?</p>
+          <p class="font-semibold">
+            Are you striving to be a good architect? Do you aim to have a
+            successful career in architecture?
+          </p>
+          <p class="font-semibold">Then vista is the venue you seek for!</p>
+          <p class="text-pretty">
+            VISTA is not just your typical college fest, it's a gateway for you
+            to explore diverse dimensions that diverge from a single field:
+            Architecture. Through interactive bubble talks with prominent
+            figures who have leveraged their architectural foundation for
+            various other fields, you will gain insights into alternative career
+            paths. From field trips to activism, cinema screenings to promoting
+            local art, VISTA promises you an immersive experience that will take
+            you through broader horizons, widening the spectrum for the future.
+            We are here to challenge your conventional viewpoints, provisioning
+            you to envision a future brimming with possibilities. An exploration
+            of dimensions, viewed from different perspectives, that's what we
+            promise you. Join us as we redefine the boundaries of architecture
+            and ignite inspiration for the visionary in you at VISTA!
+          </p>
+          <p class="italic">Why stick to the same beats and lights? Join us to explore blueprints into the future. Something visionary awaits!</p>
+        </div>
+      </div>
+    </section>
+    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="About">
+      <div class="pt-36">
+        <h2 class="font-semibold text-5xl text-[#81381F] font-[Manrope]">
+          Talk Sessions
+        </h2>
+        <div class="flex flex-col gap-5 pt-5">
+          
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          var mobileMenu = document.getElementById("mobile-menu");
+          if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+          } else {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+
+      function toggleNav() {
+        var nav = document.getElementById("navbarNav");
+        if (nav.classList.contains("show")) {
+          nav.classList.remove("show");
+        } else {
+          nav.classList.add("show");
+        }
+      }
+
+      window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('bg-[#dfccb5]');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('bg-[#dfccb5]');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+    </script>
+  </body>
+</html>

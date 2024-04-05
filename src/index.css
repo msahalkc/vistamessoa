@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+.parallax{
+  /* The image used */
+  background-image: url("./assets/bg\ texture.png");
+
+  /* Set a specific height */
+  min-height: 100vh;
+  z-index: -5;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buyTicket{
+    background-color: #81381F;
+    color: #fff;
+}
