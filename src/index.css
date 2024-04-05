@@ -29,11 +29,3 @@ body{
 .blurBg{
   backdrop-filter: blur(10px);
 }
-
-#simple-bar {
-	border: 1px solid grey;
-	width: 50%;
-	max-height: 200px;
-	min-height: 100px;
-	margin: 50px auto;
-}
