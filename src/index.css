@@ -7,7 +7,7 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 
-.parallax{
+body{
   /* The image used */
   background-image: url("./assets/bg\ texture.png");
 
@@ -24,4 +24,16 @@ body{
 .buyTicket{
     background-color: #81381F;
     color: #fff;
+}
+
+.blurBg{
+  backdrop-filter: blur(10px);
+}
+
+#simple-bar {
+	border: 1px solid grey;
+	width: 50%;
+	max-height: 200px;
+	min-height: 100px;
+	margin: 50px auto;
 }
