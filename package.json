@@ -17,6 +17,7 @@
     "vercel": "^33.7.0"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "resize-observer-polyfill": "^1.5.1",
     "simplebar": "^6.2.5"
   }

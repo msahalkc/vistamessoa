@@ -33,6 +33,7 @@
         }
       </style>
     </noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body data-simplebar>
     <nav
@@ -93,6 +94,7 @@
     >
       <div
         class="flex flex-col items-center md:items-start md:justify-center pt-36 md:pt-0 md:w-[50%] min-h-[90vh] gap-5 text-center md:text-left"
+        data-aos="fade-up-right"
       >
         <h3 class="font-[Manrope] text-xl md:text-5xl font-semibold">
           Exploring the Dimensions of Architecture
@@ -112,15 +114,16 @@
           Buy Ticket
         </button>
       </div>
-      <div class="w-full md:w-[50%] h-fit md:h-screen">
+      <div class="w-full md:w-[50%] h-fit md:h-screen"
+      data-aos="slide-up">
         <img
           src="./assets/building.png"
-          class="absolute left-0 md:left-[50%] bottom-0 h-fit md:h-screen"
+          class="absolute left-0 bottom-0 h-fit md:h-screen"
           alt=""
         />
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="About">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="About" data-aos="fade-up" data-aos-delay="300">
       <div class="pt-36">
         <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">About</h2>
         <div class="flex flex-col gap-5 pt-5 text-sm md:text-2xl">
@@ -169,7 +172,7 @@
     </section>
     <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="Talks">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
+        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]" data-aos="fade-up">
           Talk Sessions
         </h2>
         <img
@@ -178,10 +181,10 @@
           alt=""
         />
         <div class="flex flex-col md:flex-row gap-5 pt-5 w-full justify-between">
-          <img src="./assets/TalksArtboard 1.jpg" alt="" width="350px">
-          <img src="./assets/TalksArtboard 1 copy.jpg" alt="" width="350px">
-          <img src="./assets/TalksArtboard 1 copy 2.jpg" alt="" width="350px">
-          <img src="./assets/TalksArtboard 1 copy 3.jpg" alt="" width="350px">
+          <img src="./assets/TalksArtboard 1.jpg" alt="" width="350px" data-aos="fade-up-right">
+          <img src="./assets/TalksArtboard 1 copy.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/TalksArtboard 1 copy 2.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/TalksArtboard 1 copy 3.jpg" alt="" width="350px" data-aos="fade-up-left">
         </div>
       </div>
     </section>
@@ -196,15 +199,15 @@
           alt=""
         />
         <div class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around">
-          <img src="./assets/pc-1.jpg" alt="" width="350px">
-          <img src="./assets/pc-2.jpg" alt="" width="350px">
-          <img src="./assets/pc-3.jpg" alt="" width="350px">
-          <img src="./assets/pc-4.jpg" alt="" width="350px">
-          <img src="./assets/pa-1.jpg" alt="" width="350px">
-          <img src="./assets/pa-2.jpg" alt="" width="350px">
-          <img src="./assets/pa-3.jpg" alt="" width="350px">
-          <img src="./assets/pa-4.jpg" alt="" width="350px">
-          <img src="./assets/pa-5.jpg" alt="" width="350px">
+          <img src="./assets/pc-1.jpg" alt="" width="350px" data-aos="fade-up-right">
+          <img src="./assets/pc-2.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/pc-3.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/pc-4.jpg" alt="" width="350px" data-aos="fade-up-left">
+          <img src="./assets/pa-1.jpg" alt="" width="350px" data-aos="fade-up-right">
+          <img src="./assets/pa-2.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/pa-3.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/pa-4.jpg" alt="" width="350px" data-aos="fade-up-left">
+          <img src="./assets/pa-5.jpg" alt="" width="350px" data-aos="fade-up">
         </div>
       </div>
     </section>
@@ -219,10 +222,10 @@
           alt=""
         />
         <div class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around">
-          <img src="./assets/w-1.jpg" alt="" width="350px">
-          <img src="./assets/w-2.jpg" alt="" width="350px">
-          <img src="./assets/w-3.jpg" alt="" width="350px">
-          <img src="./assets/w-4.jpg" alt="" width="350px">
+          <img src="./assets/w-1.jpg" alt="" width="350px" data-aos="fade-up-right">
+          <img src="./assets/w-2.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/w-3.jpg" alt="" width="350px" data-aos="fade-up">
+          <img src="./assets/w-4.jpg" alt="" width="350px" data-aos="fade-up-left">
         </div>
       </div>
     </section>
@@ -269,5 +272,10 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
   </body>
 </html>
