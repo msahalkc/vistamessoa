@@ -100,22 +100,23 @@
       <a href="#Workshops" class="block py-2 px-4 navbar-link">Workshops</a>
     </div>
     <!-- <div class="parallax"></div> -->
-    <div
-      class="loader border-t-2 rounded-full border-[#04066C] bg-[#81381F] animate-spin aspect-square w-16 flex justify-center items-center text-white"
-    ></div>
+    <div id="preloader" class="flex flex-col gap-10">
+      <div class="font-semibold text-white text-2xl">Vista 2024</div>
+      <div class="spinner"></div>
+    </div>
     <section
       class="flex flex-col md:flex-row md:px-36 px-5 text-2xl min-h-screen w-full relative"
       id="Home"
     >
       <div
         class="flex flex-col items-center md:items-start md:justify-center pt-24 md:pt-0 md:w-[50%] min-h-[90vh] gap-2 md:gap-5 text-center md:text-left"
-        data-aos="fade-up-right"
+        data-aos="fade-up-right" data-aos-delay="5000"
       >
         <h3 class="font-[Manrope] text-xl md:text-5xl font-semibold">
           Exploring the Dimensions of Architecture
         </h3>
         <div class="w-fit">
-          <h1 class="text-5xl md:text-8xl font-semibold text-[#04066C]">
+          <h1 class="text-5xl md:text-8xl font-bold text-[#04066C]">
             Vista 2024
           </h1>
           <div
@@ -129,7 +130,7 @@
           >Buy Ticket</a
         >
       </div>
-      <div class="w-full md:w-[50%] h-fit md:h-screen" data-aos="slide-up">
+      <div class="w-full md:w-[50%] h-fit md:h-screen" data-aos="slide-up" data-aos-delay="5000">
         <img
           src="./assets/building.webp"
           class="absolute left-0 bottom-0 h-fit md:h-screen"

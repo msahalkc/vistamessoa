@@ -1,11 +1,6 @@
-// Show the loader when the page starts loading
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.loader').style.display = 'block';
-});
-
-// Hide the loader once the page content has loaded
-window.addEventListener('load', function() {
-  document.querySelector('.loader').style.display = 'none';
+window.addEventListener("load", () => {
+  const preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
 });
 
 document
