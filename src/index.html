@@ -79,7 +79,7 @@
     <!-- Responsive Mobile Menu -->
     <div
       id="mobile-menu"
-      class="hidden md:hidden fixed w-screen bg-[#04066C] text-white p-4 pt-16 text-left"
+      class="hidden md:hidden fixed w-screen bg-[#04066C] text-white p-4 pt-16 text-left z-20"
     >
       <a href="#" class="block py-2 px-4">About</a>
       <a href="#" class="block py-2 px-4">Talks</a>
@@ -87,7 +87,7 @@
     </div>
     <!-- <div class="parallax"></div> -->
     <section
-      class="flex flex-col md:flex-row md:px-36 px-5 text-2xl min-h-screen w-full relative"
+      class="flex flex-col md:flex-row md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen w-full relative"
       id="Home"
     >
       <div
@@ -119,7 +119,7 @@
         />
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="About">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="About">
       <div class="pt-36">
         <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">About</h2>
         <div class="flex flex-col gap-5 pt-5 text-sm md:text-2xl">
@@ -166,14 +166,14 @@
         </div>
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Talks">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="Talks">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">
+        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
           Talk Sessions
         </h2>
         <img
           src="./assets/kolkali.png"
-          class="hidden md:block absolute left-[15%] top-[0%] scale-50 -z-10"
+          class="absolute left-0 top-10 md:left-[15%] md:top-[0%] scale-50 -z-10"
           alt=""
         />
         <div class="flex flex-col md:flex-row gap-5 pt-5 w-full justify-between">
@@ -184,14 +184,14 @@
         </div>
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Discussions">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="Discussions">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">
+        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
           Panel Discussions
         </h2>
         <img
           src="./assets/team.png"
-          class="hidden md:block absolute left-[30%] top-[-4%] -z-10"
+          class="absolute left-10 top-0 md:left-[30%] md:top-[-4%] scale-50 md:scale-100 -z-10"
           alt=""
         />
         <div class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around">
@@ -207,14 +207,14 @@
         </div>
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Workshops">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="Workshops">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">
+        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
           Workshops
         </h2>
         <img
           src="./assets/painter.png"
-          class="hidden md:block absolute left-[20%] top-[-3%] -z-10 scale-75"
+          class="absolute left-0 top-0 scale-50 md:left-[20%] md:top-[-3%] -z-10 md:scale-75"
           alt=""
         />
         <div class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around">
@@ -225,37 +225,37 @@
         </div>
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Tickets">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen" id="Tickets">
       <div class="pt-36 relative">
-        <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">
-          Grab your TIckets Now
+        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
+          Grab your Tickets Now
         </h2>
         <div class="flex flex-col gap-5 pt-5">
           <img
             src="./assets/clapboard.png"
-            class="hidden md:block absolute left-[100%] top-[10%]"
+            class="absolute left-0 -z-10 top-14 scale-50 md:scale-100 md:left-[100%] md:top-[10%]"
             alt=""
           />
         </div>
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen mb-10" id="Contact">
+    <section class="flex md:px-36 px-5 text-2xl min-h-dvh md:min-h-screen mb-10" id="Contact">
       <div class="pt-36 w-full">
-        <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">
+        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
           Contact Us
         </h2>
-        <div class="mt-10 flex flex-col md:flex-row gap-5 bg-[#81381F] text-white flex-1 p-10">
+        <div class="mt-10 flex flex-col md:flex-row gap-5 border-2 border-[#81381F] text-[#81381F] flex-1 p-10">
           <div class="md:w-[50%] text-center">
             <h3 class="font-semibold text-4xl">Talk to Us</h3>
             <p class="font-light text-lg md:inline">Mail: messoa@gmail.com</p>
             <p class="font-light text-lg md:inline hidden">|</p>
             <p class="font-light text-lg md:inline">+91 999 555 999 0</p>
             <form action="mailto:iedc@mesce.ac.in" method="post" enctype="text/plain" class="w-full flex flex-col md:px-16 gap-5 pt-10">
-              <input type="text" placeholder="Name (required)" required name="Name" class="w-full text-white p-2 text-sm bg-transparent border-white border-2">
-              <input type="text" placeholder="Address (required)" required  name="Address" class="text-white p-2 text-sm bg-transparent border-white border-2">
-              <input type="text" placeholder="Topic (required)" required  name="Topic" class="text-white p-2 text-sm bg-transparent border-white border-2">
-              <textarea placeholder="Subject (required)" class="text-white p-2 text-sm bg-transparent border-white border-2 h-[142px]" required></textarea  name="Subject">
-              <input type="submit" value="Send" class="text-[#81381F] font-semibold text-lg bg-white p-2">
+              <input type="text" placeholder="Name (required)" required name="Name" class="w-full text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2">
+              <input type="text" placeholder="Address (required)" required  name="Address" class="text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2">
+              <input type="text" placeholder="Topic (required)" required  name="Topic" class="text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2">
+              <textarea placeholder="Subject (required)" class="text-white p-2 text-sm bg-transparent border-[#81381F] border-2 h-[142px]" required></textarea  name="Subject">
+              <input type="submit" value="Send" class="text-white font-semibold text-lg bg-[#81381F] p-2">
             </form>
           </div>
           <div class="md:w-[50%] text-center">
