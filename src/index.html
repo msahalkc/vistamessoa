@@ -9,30 +9,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-
-    <style>
-      /* Your custom styles go here */
-    </style>
     <script src="./main.js" defer></script>
-    <noscript>
-      <style>
-        /**
-        * Reinstate scrolling for non-JS clients
-        */
-        .simplebar-content-wrapper {
-          scrollbar-width: auto;
-          -ms-overflow-style: auto;
-        }
-
-        .simplebar-content-wrapper::-webkit-scrollbar,
-        .simplebar-hide-scrollbar::-webkit-scrollbar {
-          display: initial;
-          width: initial;
-          height: initial;
-        }
-      </style>
-    </noscript>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body data-simplebar>
@@ -58,7 +54,9 @@
           <a href="#Workshops" class="font-normal text-[#04066C] navbar-link"
             >Workshops</a
           >
-          <a href="#Tickets"><button class="font-normal buyTicket py-2 px-5">Buy Ticket</button></a>
+          <a href="#Tickets" class="font-normal buyTicket py-2 px-5"
+            >Buy Ticket</a
+          >
         </div>
 
         <!-- Responsive Button -->
@@ -88,7 +86,9 @@
       <a href="#Workshops" class="block py-2 px-4 navbar-link">Workshops</a>
     </div>
     <!-- <div class="parallax"></div> -->
-    <div class="loader border-t-2 rounded-full border-[#04066C] bg-[#81381F] animate-spin aspect-square w-16 flex justify-center items-center text-white"></div>
+    <div
+      class="loader border-t-2 rounded-full border-[#04066C] bg-[#81381F] animate-spin aspect-square w-16 flex justify-center items-center text-white"
+    ></div>
     <section
       class="flex flex-col md:flex-row md:px-36 px-5 text-2xl min-h-screen w-full relative"
       id="Home"
@@ -111,12 +111,13 @@
             <h5 class="">MES College of Engineering</h5>
           </div>
         </div>
-        <button class="text-sm md:text-xl font-normal buyTicket py-2 px-5 w-fit">
+        <button
+          class="text-sm md:text-xl font-normal buyTicket py-2 px-5 w-fit"
+        >
           Buy Ticket
         </button>
       </div>
-      <div class="w-full md:w-[50%] h-fit md:h-screen"
-      data-aos="slide-up">
+      <div class="w-full md:w-[50%] h-fit md:h-screen" data-aos="slide-up">
         <img
           src="./assets/building.webp"
           class="absolute left-0 bottom-0 h-fit md:h-screen"
@@ -124,27 +125,34 @@
         />
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="About" data-aos="fade-up" data-aos-delay="300">
+    <section
+      class="flex md:px-36 px-5 text-2xl min-h-screen"
+      id="About"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
       <div class="pt-36">
         <h2 class="font-bold text-5xl text-[#81381F] font-[Manrope]">About</h2>
         <div class="flex flex-col gap-5 pt-5 text-sm md:text-2xl">
           <p class="font-semibold">
             After completing
-            <span class="italic bg-[#81381F] text-white px-1">Architecture</span
-            >, what next?
+            <span class="italic bg-[#81381F] text-white px-1">
+              Architecture
+            </span>
+            , what next?
           </p>
           <p class="font-semibold">
             Are you
-            <span class="italic bg-[#81381F] text-white px-1"
-              >striving to be a good architect?</span
-            >
+            <span class="italic bg-[#81381F] text-white px-1">
+              striving to be a good architect?
+            </span>
             Do you aim to have a successful career in architecture?
           </p>
           <p class="font-semibold">
             Then
-            <span class="italic bg-[#81381F] text-white px-1"
-              >vista is the venue</span
-            >
+            <span class="italic bg-[#81381F] text-white px-1">
+              vista is the venue
+            </span>
             you seek for!
           </p>
           <p class="text-pretty text-sm md:text-xl">
@@ -163,17 +171,20 @@
             and ignite inspiration for the visionary in you at VISTA!
           </p>
           <p class="italic text-sm md:text-xl">
-            <span class="italic bg-[#81381F] text-white px-1"
-              >Why stick to the same beats and lights? Join us to explore
-              blueprints into the future. Something visionary awaits!</span
-            >
+            <span class="italic bg-[#81381F] text-white px-1">
+              Why stick to the same beats and lights? Join us to explore
+              blueprints into the future. Something visionary awaits!
+            </span>
           </p>
         </div>
       </div>
     </section>
     <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Talks">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]" data-aos="fade-up">
+        <h2
+          class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]"
+          data-aos="fade-up"
+        >
           Talk Sessions
         </h2>
         <img
@@ -181,28 +192,60 @@
           class="absolute left-0 top-10 md:left-[15%] md:top-[0%] scale-50 -z-10"
           alt=""
         />
-        <div class="flex flex-col md:flex-row gap-5 pt-5 w-full justify-between">
-          <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-            <img src="./assets/TalksArtboard 1.webp" alt="" width="350px" data-aos="fade-up-right">
-        </div>
-        
-        <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-            <img src="./assets/TalksArtboard 1 copy.webp" alt="" width="350px" data-aos="fade-up">
-        </div>
-        
-        <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-            <img src="./assets/TalksArtboard 1 copy 2.webp" alt="" width="350px" data-aos="fade-up">
-        </div>
-        
-        <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-            <img src="./assets/TalksArtboard 1 copy 3.webp" alt="" width="350px" data-aos="fade-up-left">
-        </div>        
+        <div
+          class="flex flex-col md:flex-row gap-5 pt-5 w-full justify-between"
+        >
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/TalksArtboard 1.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up-right"
+            />
+          </div>
+
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/TalksArtboard 1 copy.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up"
+            />
+          </div>
+
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/TalksArtboard 1 copy 2.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up"
+            />
+          </div>
+
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/TalksArtboard 1 copy 3.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up-left"
+            />
+          </div>
         </div>
       </div>
     </section>
     <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Discussions">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
+        <h2
+          class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]"
+        >
           Panel Discussions
         </h2>
         <img
@@ -210,57 +253,138 @@
           class="absolute left-10 top-0 md:left-[30%] md:top-[-4%] scale-50 md:scale-100 -z-10"
           alt=""
         />
-        <div class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around">
-          <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-            <img src="./assets/pc.webp" alt="" class="md:w-[500px] w-[350px]" data-aos="slide-up">
+        <div
+          class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around"
+        >
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/pc.webp"
+              alt=""
+              class="md:w-[500px] w-[350px]"
+              data-aos="slide-up"
+            />
           </div>
           <div>
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pc-1.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up-right">
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pc-1.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up-right"
+              />
             </div>
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pc-2.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up">
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pc-2.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up"
+              />
             </div>
-          
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pc-3.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up">
+
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pc-3.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up"
+              />
             </div>
-          
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pc-4.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up-left">
+
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pc-4.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up-left"
+              />
             </div>
           </div>
-        
-          <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-            <img src="./assets/pa.webp" alt="" class="md:w-[500px] w-[350px]" data-aos="slide-up">
+
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/pa.webp"
+              alt=""
+              class="md:w-[500px] w-[350px]"
+              data-aos="slide-up"
+            />
           </div>
           <div>
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pa-1.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up-right">
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pa-1.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up-right"
+              />
             </div>
-          
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pa-2.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up">
+
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pa-2.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up"
+              />
             </div>
-          
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pa-3.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up">
+
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pa-3.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up"
+              />
             </div>
-          
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pa-4.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up-left">
+
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pa-4.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up-left"
+              />
             </div>
-          
-            <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-              <img src="./assets/pa-5.webp" alt="" class="w-[350px] md:w-[300px]" data-aos="fade-up">
+
+            <div
+              class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+            >
+              <img
+                src="./assets/pa-5.webp"
+                alt=""
+                class="w-[350px] md:w-[300px]"
+                data-aos="fade-up"
+              />
             </div>
-          </div>        
+          </div>
         </div>
       </div>
     </section>
     <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Workshops">
       <div class="pt-36 w-full relative">
-        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
+        <h2
+          class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]"
+        >
           Workshops
         </h2>
         <img
@@ -268,29 +392,60 @@
           class="absolute left-0 top-0 scale-50 md:left-[20%] md:top-[-3%] -z-10 md:scale-75"
           alt=""
         />
-        <div class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around">
-          <div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-    <img src="./assets/w-1.webp" alt="" width="350px" data-aos="fade-up-right">
-</div>
+        <div
+          class="flex flex-col md:flex-row gap-5 pt-5 w-full flex-wrap justify-around"
+        >
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/w-1.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up-right"
+            />
+          </div>
 
-<div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-    <img src="./assets/w-2.webp" alt="" width="350px" data-aos="fade-up">
-</div>
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/w-2.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up"
+            />
+          </div>
 
-<div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-    <img src="./assets/w-3.webp" alt="" width="350px" data-aos="fade-up">
-</div>
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/w-3.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up"
+            />
+          </div>
 
-<div class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]">
-    <img src="./assets/w-4.webp" alt="" width="350px" data-aos="fade-up-left">
-</div>
-
+          <div
+            class="inline-block md:hover:transition-transform md:hover:duration-300 md:hover:transform md:hover:scale-105 md:hover:border-2 md:hover:border-[#81381F]"
+          >
+            <img
+              src="./assets/w-4.webp"
+              alt=""
+              width="350px"
+              data-aos="fade-up-left"
+            />
+          </div>
         </div>
       </div>
     </section>
     <section class="flex md:px-36 px-5 text-2xl min-h-screen" id="Tickets">
       <div class="pt-36 relative flex-1 flex flex-col">
-        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
+        <h2
+          class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]"
+        >
           Grab your Tickets Now
         </h2>
         <div class="flex-1 flex flex-col gap-5 pt-5">
@@ -299,46 +454,95 @@
             class="absolute left-0 -z-10 top-14 scale-50 md:scale-100 md:left-[30%] md:top-[3%]"
             alt=""
           />
-          <iframe class="w-full h-full" src="https://www.yepdesk.com/embed/buy-tickets/66116256c9e77c0001b457c4/private/ns94qn8k7v" loading="lazy"></iframe>
+          <iframe
+            class="w-full h-full"
+            src="https://www.yepdesk.com/embed/buy-tickets/66116256c9e77c0001b457c4/private/ns94qn8k7v"
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>
-    <section class="flex md:px-36 px-5 text-2xl min-h-screen mb-10" id="Contact">
+    <section
+      class="flex md:px-36 px-5 text-2xl min-h-screen mb-10"
+      id="Contact"
+    >
       <div class="pt-36 w-full">
-        <h2 class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]">
+        <h2
+          class="font-bold text-4xl md:text-5xl text-[#81381F] font-[Manrope]"
+        >
           Contact Us
         </h2>
-        <div class="mt-10 flex flex-col md:flex-row gap-5 border-2 border-[#81381F] text-[#81381F] flex-1 p-10">
+        <div
+          class="mt-10 flex flex-col md:flex-row gap-5 border-2 border-[#81381F] text-[#81381F] flex-1 p-10"
+        >
           <div class="md:w-[50%] text-center">
             <h3 class="font-semibold text-4xl">Talk to Us</h3>
             <p class="font-light text-lg md:inline">Mail: messoa@gmail.com</p>
             <p class="font-light text-lg md:inline hidden">|</p>
             <p class="font-light text-lg md:inline">+91 999 555 999 0</p>
-            <form action="mailto:iedc@mesce.ac.in" method="post" enctype="text/plain" class="w-full flex flex-col md:px-16 gap-5 pt-10">
-              <input type="text" placeholder="Name (required)" required name="Name" class="w-full text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2">
-              <input type="text" placeholder="Address (required)" required  name="Address" class="text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2">
-              <input type="text" placeholder="Topic (required)" required  name="Topic" class="text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2">
-              <textarea placeholder="Subject (required)" class="text-white p-2 text-sm bg-transparent border-[#81381F] border-2 h-[142px]" required></textarea  name="Subject">
-              <input type="submit" value="Send" class="text-white font-semibold text-lg bg-[#81381F] p-2">
+            <form
+              action="mailto:iedc@mesce.ac.in"
+              method="post"
+              enctype="text/plain"
+              class="w-full flex flex-col md:px-16 gap-5 pt-10"
+            >
+              <input
+                type="text"
+                placeholder="Name (required)"
+                required
+                name="Name"
+                class="w-full text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2"
+              />
+              <input
+                type="text"
+                placeholder="Address (required)"
+                required
+                name="Address"
+                class="text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2"
+              />
+              <input
+                type="text"
+                placeholder="Topic (required)"
+                required
+                name="Topic"
+                class="text-[#81381F] p-2 text-sm bg-transparent border-[#81381F] border-2"
+              />
+              <textarea
+                placeholder="Subject (required)"
+                class="text-white p-2 text-sm bg-transparent border-[#81381F] border-2 h-[142px]"
+                name="Subject"
+                required
+              ></textarea>
+              <input
+                type="submit"
+                value="Send"
+                class="text-white font-semibold text-lg bg-[#81381F] p-2"
+              />
             </form>
           </div>
           <div class="md:w-[50%] text-center">
-            <iframe id="maps"
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7576179266575!2d76.02019647495825!3d10.829851889322143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b9db15236a4b%3A0xd60d2140eeb6c6d7!2sMES%20College%20of%20Engineering%20Kuttippuram!5e0!3m2!1sen!2sin!4v1700033668639!5m2!1sen!2sin"
-                              allowfullscreen="" loading="lazy"
-                              referrerpolicy="no-referrer-when-downgrade"
-                              class="w-full h-full"></iframe>
+            <iframe
+              id="maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7576179266575!2d76.02019647495825!3d10.829851889322143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b9db15236a4b%3A0xd60d2140eeb6c6d7!2sMES%20College%20of%20Engineering%20Kuttippuram!5e0!3m2!1sen!2sin!4v1700033668639!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full"
+            ></iframe>
           </div>
         </div>
-        <p class="text-sm text-center mt-5"> Copyright &copy; 2024 All Rights Reserved by
-          <a href="https://msahalkc.netlify.app/" class="font-semibold">&nbsp;Muhammed Sahal K C</a>.
-      </p>
+        <p class="text-sm text-center mt-5">
+          Copyright &copy; 2024 All Rights Reserved by
+          <a href="https://msahalkc.netlify.app/" class="font-semibold"
+            >&nbsp;Muhammed Sahal K C</a
+          >.
+        </p>
       </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        disable: 'mobile'
+        disable: "mobile",
       });
     </script>
   </body>
