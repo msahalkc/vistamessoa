@@ -78,3 +78,10 @@ a.navbar-link::after {
 a.navbar-link:hover::after {
   width: 100%; /* Expand the width to cover the entire width of the link */
 }
+
+.loader {
+  position: fixed; /* Position the loader relative to the viewport */
+  top: 50%; /* Position the loader vertically in the center of the viewport */
+  left: 50%; /* Position the loader horizontally in the center of the viewport */
+  transform: translate(-50%, -50%); /* Center the loader precisely */
+}
